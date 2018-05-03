@@ -1,0 +1,43 @@
+Started by user [8mha:////4EPnmd7LJYlJKo7bIGDCUMLOgseGuC/cxtPbpK8ubGuaAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZO/dLi1CL94uJcALRzoFG+AAAA[0mSumit
+Obtained Jenkinsfile from git https://5u3it@bitbucket.org/5u3it/django_docker_jenkins.git
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on [8mha:////4O80454fa2pmwBixpAwY1g3zo1bHoKe2uS6GDQTs8VQ2AAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/jenkins_home/workspace/DjangoPipeline
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Get Latest Code)
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] checkout
+Cloning the remote Git repository
+Cloning repository https://5u3it@bitbucket.org/5u3it/django_docker_jenkins.git
+ > git init /var/jenkins_home/workspace/DjangoPipeline # timeout=10
+Fetching upstream changes from https://5u3it@bitbucket.org/5u3it/django_docker_jenkins.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://5u3it@bitbucket.org/5u3it/django_docker_jenkins.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://5u3it@bitbucket.org/5u3it/django_docker_jenkins.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://5u3it@bitbucket.org/5u3it/django_docker_jenkins.git # timeout=10
+Fetching upstream changes from https://5u3it@bitbucket.org/5u3it/django_docker_jenkins.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://5u3it@bitbucket.org/5u3it/django_docker_jenkins.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 0e7f74f89ca86b619807cf2843c3089fc5c2fbce (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0e7f74f89ca86b619807cf2843c3089fc5c2fbce
+Commit message: "Dockerize the project!"
+First time build. Skipping changelog.
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Install Application Dependencies)
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[DjangoPipeline] Running shell script
++ pip3 install -r requirements.txt
+/var/jenkins_home/workspace/DjangoPipeline@tmp/durable-311181e7/script.sh: 2: /var/jenkins_home/workspace/DjangoPipeline@tmp/durable-311181e7/script.sh: pip3: not found
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 127
+[8mha:////4Koms7EZJLSYmO7x29QKWZykz1QBSCQiyjYiEudK0l5eAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mFinished: FAILURE

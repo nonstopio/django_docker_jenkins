@@ -1,0 +1,8 @@
+[DjangoPipeline] Running shell script
++ python3.5 manage.py makemigrations app
+No changes detected in app 'app'
++ python3.5 manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.

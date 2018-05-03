@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.12.2">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>ssm</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.8.0">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.1">
+              <sha1>0e7f74f89ca86b619807cf2843c3089fc5c2fbce</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>1</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://5u3it@bitbucket.org/5u3it/django_docker_jenkins.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.8.0">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/jenkins_home/workspace/DjangoPipeline</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.6">
+      <revisionStates>
+        <entry>
+          <string>git https://5u3it@bitbucket.org/5u3it/django_docker_jenkins.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+  </actions>
+  <queueId>1</queueId>
+  <timestamp>1525362724654</timestamp>
+  <startTime>1525362724677</startTime>
+  <result>FAILURE</result>
+  <duration>167030</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node {
+
+    stage (&quot;Get Latest Code&quot;) {
+        checkout scm
+    }
+
+    stage (&quot;Install Application Dependencies&quot;) {
+        sh &apos;pip3 install -r requirements.txt&apos;
+    }
+
+    stage(&apos;Build&apos;) {
+        echo &apos;Building..&apos;
+        sh &apos;&apos;&apos;
+            python3.5 manage.py makemigrations app
+            python3.5 manage.py migrate
+           &apos;&apos;&apos;
+    }
+
+    stage (&quot;Run Unit/Integration Tests&quot;) {
+        echo &apos;Testing..&apos;
+
+        def testsError = null
+        try {
+            sh &apos;&apos;&apos;
+                python3.5 manage.py test
+               &apos;&apos;&apos;
+        }
+        catch(err) {
+            testsError = err
+            currentBuild.result = &apos;FAILURE&apos;
+        }
+        finally {
+            junit &apos;reports/junit.xml&apos;
+
+            if (testsError) {
+                throw testsError
+            }
+        }
+    }
+
+    stage(&apos;Deploy&apos;) {
+        echo &apos;Deploying TBD....&apos;
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>735817700</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>629600500</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>3990764500</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>1410129700</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>986701000</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>17</iota>
+    <head>1:17</head>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@3.8.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://5u3it@bitbucket.org/5u3it/django_docker_jenkins.git</url>
+            <credentialsId>494aebb5-a0e9-4e4d-9c0c-8f93f4d3e990</credentialsId>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/DjangoPipeline</workspace>
+      <changelogFile>/var/jenkins_home/jobs/DjangoPipeline/builds/1/changelog0.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

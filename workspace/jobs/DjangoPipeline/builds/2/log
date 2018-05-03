@@ -1,0 +1,80 @@
+Started by user [8mha:////4EPnmd7LJYlJKo7bIGDCUMLOgseGuC/cxtPbpK8ubGuaAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZO/dLi1CL94uJcALRzoFG+AAAA[0mSumit
+Obtained Jenkinsfile from git https://5u3it@bitbucket.org/5u3it/django_docker_jenkins.git
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on [8mha:////4O80454fa2pmwBixpAwY1g3zo1bHoKe2uS6GDQTs8VQ2AAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/jenkins_home/workspace/DjangoPipeline
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Get Latest Code)
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] checkout
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://5u3it@bitbucket.org/5u3it/django_docker_jenkins.git # timeout=10
+Fetching upstream changes from https://5u3it@bitbucket.org/5u3it/django_docker_jenkins.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://5u3it@bitbucket.org/5u3it/django_docker_jenkins.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 0e7f74f89ca86b619807cf2843c3089fc5c2fbce (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0e7f74f89ca86b619807cf2843c3089fc5c2fbce
+Commit message: "Dockerize the project!"
+ > git rev-list --no-walk 0e7f74f89ca86b619807cf2843c3089fc5c2fbce # timeout=10
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Install Application Dependencies)
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[DjangoPipeline] Running shell script
++ pip3 install -r requirements.txt
+Collecting Django==1.11.10 (from -r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/32/44/a9afb2b7dd641d89341a2126020bbda9201d270e23e4ffe2601eeaaabcfd/Django-1.11.10-py2.py3-none-any.whl (6.9MB)
+Collecting psycopg2==2.7.3.2 (from -r requirements.txt (line 2))
+  Downloading https://files.pythonhosted.org/packages/a7/4b/ca0763be01bd7084b0cc06c6c83cbcfc0ef8238063bfe6b3e2a974dd0f80/psycopg2-2.7.3.2-cp35-cp35m-manylinux1_x86_64.whl (2.7MB)
+Collecting pytz (from Django==1.11.10->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/dc/83/15f7833b70d3e067ca91467ca245bae0f6fe56ddc7451aa0dc5606b120f2/pytz-2018.4-py2.py3-none-any.whl (510kB)
+Installing collected packages: pytz, Django, psycopg2
+Successfully installed Django-1.11.10 psycopg2-2.7.3.2 pytz-2018.4
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Build)
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] echo
+Building..
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[DjangoPipeline] Running shell script
++ python3.5 manage.py makemigrations app
+No changes detected in app 'app'
++ python3.5 manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Run Unit/Integration Tests)
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] echo
+Testing..
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[DjangoPipeline] Running shell script
++ python3.5 manage.py test
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+Tests
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+Destroying test database for alias 'default'...
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] junit
+Recording test results
+No test report files were found. Configuration error?
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4C0tbHSK1PyWB9+SsNUa3GseDMstVpE2OpjOguwmLMuMAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+ERROR: No test report files were found. Configuration error?
+[8mha:////4Koms7EZJLSYmO7x29QKWZykz1QBSCQiyjYiEudK0l5eAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mFinished: FAILURE

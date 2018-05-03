@@ -1,0 +1,10 @@
+[DjangoPipeline] Running shell script
++ pip3 install -r requirements.txt
+Collecting Django==1.11.10 (from -r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/32/44/a9afb2b7dd641d89341a2126020bbda9201d270e23e4ffe2601eeaaabcfd/Django-1.11.10-py2.py3-none-any.whl (6.9MB)
+Collecting psycopg2==2.7.3.2 (from -r requirements.txt (line 2))
+  Downloading https://files.pythonhosted.org/packages/a7/4b/ca0763be01bd7084b0cc06c6c83cbcfc0ef8238063bfe6b3e2a974dd0f80/psycopg2-2.7.3.2-cp35-cp35m-manylinux1_x86_64.whl (2.7MB)
+Collecting pytz (from Django==1.11.10->-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/dc/83/15f7833b70d3e067ca91467ca245bae0f6fe56ddc7451aa0dc5606b120f2/pytz-2018.4-py2.py3-none-any.whl (510kB)
+Installing collected packages: pytz, Django, psycopg2
+Successfully installed Django-1.11.10 psycopg2-2.7.3.2 pytz-2018.4

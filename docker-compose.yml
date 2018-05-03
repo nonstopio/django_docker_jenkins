@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+  jenkins:
+    build:
+      context: jenkins/
+    restart: always
+    ports:
+        - "8080:8080"
+        - "50000:50000"
+    volumes:
+        - ./workspace:/var/jenkins_home
+    depends_on:
+      - db

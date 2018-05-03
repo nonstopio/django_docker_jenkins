@@ -6,14 +6,14 @@
   <usages>
     <entry>
       <string>DjangoPipeline</string>
-      <ranges>1-3</ranges>
+      <ranges>1-4</ranges>
     </entry>
   </usages>
   <facets>
     <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.1.16">
-      <timestamp>1525364526197</timestamp>
+      <timestamp>1525364784610</timestamp>
       <itemFullName>DjangoPipeline</itemFullName>
-      <timestamp0>1525363545776</timestamp0>
+      <timestamp0>1525364526197</timestamp0>
     </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
   </facets>
 </fingerprint>
